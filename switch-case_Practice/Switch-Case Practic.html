@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch Case Practic</title>
+</head>
+<body>
+<script>
+    let browser;
+    browser = "Firefox";
+    switch(browser){
+        case "Edge":
+            alert("You've got the Edge!");
+            break;
+        case "Chrome":
+        case "Firefox":
+        case "Safari":
+        case "Opera":
+            alert("Okay we support these browsers too");
+            break;
+        default:
+            alert("We hope that this pa ge looks okay");
+    }
+</script>
+
+<script>
+    let a = prompt('a?');
+    switch (a){
+        case('0'):
+            alert("0");
+            break;
+        case('1'):
+            alert("1");
+            break;
+        case('2'):
+        case('3'):
+            alert('2,3');
+            break;
+        default:
+            alert('So khac');
+            break;
+    }
+</script>
+
+<script>
+    let day = "Mon";
+    let message = "";
+
+    switch (day) {
+        case "Mon":
+            message = "Ngày đầu tuần";
+
+        case "Wed":
+            message = "Ngày giữa tuần";
+            break;
+
+        case "Sat":
+        case "Sun":
+            message = "Ngày nghỉ";
+    }
+    alert(message);
+</script>
+
+
+</body>
+</html>
