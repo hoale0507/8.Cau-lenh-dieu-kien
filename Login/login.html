@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <script>
+        let name = prompt("Input your name");
+        if (name =="Admin"){
+            pass = prompt("Enter your password");
+            if(pass == "TheMaster") {
+                alert("Welcome")
+            } else {
+                if(pass = null){
+                    alert("Canceled")
+                } else {
+                    alert("Wrong Password")
+                }
+            }
+        } else {
+            if (name == null){
+                alert(Canceled)
+            } else {
+                alert("I dont know you")
+            }
+        }
+    </script>
+
+<!--    Nếu tên nhập vào là Admin thì yêu cầu nhập mật khẩu.-->
+<!--    Nếu mật khẩu là TheMaster thì in ra chuỗi Welcome.-->
+<!--    Nếu mật khẩu nhập vào là null in ra chuỗi Canceled.-->
+<!--    Còn lại in ra chuỗi Wrong password.-->
+<!--    Nếu tên nhập vào là null in ra chuỗi canceld.-->
+<!--    Còn lại in ra chuỗi “I don’t know you"-->
+</body>
+</html>
