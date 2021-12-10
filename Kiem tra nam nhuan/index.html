@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+<body>
+<p id = "result"></p>
+<script>
+   let year = parseInt(prompt("Enter the year"));
+   if (year%4 == 0){
+   if (year%100 == 0) {
+       if(year%400 == 0) {
+           document.getElementById("result").innerHTML= year + " là năm nhuận";
+       } else {
+           document.getElementById("result").innerHTML= year + " không là năm nhuận";
+       }
+   }
+   } else {
+       document.getElementById("result").innerHTML= year + " không là năm nhuận"
+   }
+   // document.getElementById("result").innerHTML= year + " là năm nhuận"
+</script>
+</body>
+</html>
